@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Dictionary App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="dictionary-card">
+            <!-- DICTIONARY HEADING -->
+            <h2>English Dictionary</h2>
+
+            <!-- INPUT FIELD -->
+            <div class="input-field">
+                <span class="material-symbols-outlined">search</span>
+                <input type="text" placeholder="Search a word" id="input-data">
+            </div>
+
+            <!-- DISPLAY INPUT FIELD -->
+
+            <div class="display-input">
+                <div>
+                    <h4 id="display-word">Word Name</h4>
+                    <span class="material-symbols-outlined"><span class="material-symbols-outlined">volume_up</span>
+                </div>
+                
+                <div class="phonetic">
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- MEANING -->
+            <div class="output">
+                <div class="display-meaning">
+                    <h4 class="head">Meaning</h4>
+                    <span class="meaning" id="meaning"></span>
+                </div>
+
+                <!-- EXAMPLE -->
+                <div class="display-example">
+                    <h4 class="head">Example</h4>
+                    <span class="example" id="example"></span>
+                </div>
+
+                <!-- SYNONYMS -->
+                <div class="display-synonyms">
+                    <h4 class="head">Synonyms</h4>
+                    <span class="synonyms" id="synonyms"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

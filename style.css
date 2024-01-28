@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dictionary-card {
+    padding: 14px;
+    width: 80%; /* Adjusted width for smaller screens */
+    max-width: 600px; /* Added maximum width for larger screens */
+    /* box-shadow: 2px 2px 12px gray; */
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 20px; /* Added margin for spacing on smaller screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dictionary-card h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.input-field {
+    display: flex;
+    justify-content: left;
+    width: 100%; /* Adjusted width for smaller screens */
+    margin: 18px auto;
+    padding: 12px;
+    gap: 12px;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.input-field input {
+    width: 100%; /* Adjusted width for smaller screens */
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.input-field span{
+    color: #3498db;
+}
+
+.display-input {
+    display: flex;
+    flex-wrap: wrap; /* Added flex-wrap for smaller screens */
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.display-input .phonetic {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.display-input h4 {
+    font-size: 1.4rem;
+}
+
+.display-input span {
+    cursor: pointer;
+    color: #3498db;
+}
+
+.display-meaning,
+.display-example,
+.display-synonyms {
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0;
+}
+
+.display-meaning h4,
+.display-example h4,
+.display-synonyms h4 {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.display-meaning span,
+.display-example span,
+.display-synonyms span {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.749);
+    
+}
+
+.output {
+    /* background-color: rgba(0, 0, 0, 0.17); */
+    /* background-color: #a6dbff; */
+    background-color: #3a3a3a; /* Darker background color */
+    border-radius: 12px;
+    padding: 12px;
+}
